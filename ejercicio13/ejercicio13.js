@@ -3,14 +3,21 @@
         Superficie= base*altura
         Perímetro = 2*(base + altura)
     La funcion debera retornar un string que diga La superficie es de 'x' o El perimetro es de 'x'
- */
+    */
+   
+   function calcularPerimetro(base,altura) {
+     let perimetro=2*(base+altura);
+     return `El perimetro es de ${perimetro}`;
 
-function calcularSuperficie() {
+
+     //Escribe tu codigo aqui
+   }
+
+function calcularSuperficie(base,altura) {
+  let superficie=base*altura;
+  return `La superficie es de ${superficie}`;
   //Escribe tu codigo aqui
 }
 
-function calcularPerimetro() {
-  //Escribe tu codigo aqui
-}
 
 module.exports = { calcularPerimetro, calcularSuperficie };

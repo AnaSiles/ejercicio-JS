@@ -5,7 +5,12 @@
  *  el usuario no insertará numeros negativos.
  */
 
-function mediaArrayHastaMenosUno() {
+function mediaArrayHastaMenosUno(array) {
+
+  let array=[];
+  
+  
+
   //Escribe tu codigo aqui
 }
 

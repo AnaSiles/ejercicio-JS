@@ -5,6 +5,8 @@
 // de esto, es posible determinar el nivel de temperatura haciendo uso
 // de un grillo como termometro. La formula es:
 
+const { number } = require("yargs");
+
 // T = N / 4 + 40, donde T es la temperatura en grados
 // centigrados y N es el numero de sonidos emitidos por segundo.
 
@@ -12,7 +14,7 @@
 // el numero de sonidos es 0, es un error y debe de imprimir error.
 
 /**
- *  Ejercicio 11
+ *  Ejercicio 12
  *  Construir algoritmo que te permita calcular la temperatura
  *  teniendo en cuenta el numero de sonidos emitidos por un grillo en un
  *  minuto, es una funcion que depende de la temperatura. Como resultado
@@ -25,8 +27,22 @@
  *  el numero de sonidos es 0, es un error y debe de retornar error.
  */
 
-function temperaturaGrillo() {
+function temperaturaGrillo(N) {
+  
+  
+
+  if (N===0 || isNaN(N)) {
+    return "Error";
+  }
+
+  else {
+    return (N/4)+40;
+
+  }
+
+  }
+
   //Escribe tu codigo aqui
-}
+
 
 module.exports = { temperaturaGrillo };
