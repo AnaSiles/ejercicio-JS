@@ -11,6 +11,27 @@
 
 function multiplicarElementosArray() {
   //Escribe tu codigo aqui
+  let arrayUno = [];
+  let arrayDos = [];
+  let resultado = [];
+
+  for (let i = 0; i < 10; i++) {
+    arrayUno[i] = parseInt(Math.random() * 20) + 1;
+    arrayDos[i] = parseInt(Math.random() * 20) + 1;
+    resultado[i] = arrayUno[i] * arrayDos[i];
+  }
+  // Esto es para generar un objeto. El primer datos es la clave y el segundo es el valor
+  return { arrayUno: arrayUno, arrayDos: arrayDos, resultado: resultado };
 }
+
+// function multiplicarElementosArray(array1,array2) {
+//   const array1=Array.from({length:10}, ()=>Math.floor(Math.random() * 20) + 1);
+//   const array2=Array.from({length:10}, ()=>Math.floor(Math.random() * 20) + 1);
+//   let multiArray=[];
+//   for(let i=0;i<array1.length;i++){
+//     multiArray[i]=array1[i]*array2[i];
+//   }
+//   return`${array1},${array2},${multiArray}`;
+// }
 
 module.exports = { multiplicarElementosArray };

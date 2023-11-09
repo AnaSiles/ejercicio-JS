@@ -25,18 +25,56 @@
 
 // Apartado A --------------------------------------------------------------------------
 
-function trianguloConsola() {
+function trianguloConsola(filas) {
   //Escribe tu codigo aqui
+
+  let linea= "";
+  for (let i = 1; i <= filas; i++) {
+    for (let j = 1; j<=i; j++) {
+      linea+=j;
+      
+    }
+    linea+="\n";
+  }
+  return linea;
 }
 
 // Apartado B --------------------------------------------------------------------------
-function trianguloConsolaB() {
+function trianguloConsolaB(filas) {
   //Escribe tu codigo aqui
+  let linea= "";
+ for (let i=1; i<=filas; i++ ) {
+
+  for (let j = 1; j <=i; j++) {
+    linea +=i
+    
+  }
+  linea+="\n";
+}
+return linea;
+
+
 }
 
 // Apartado C --------------------------------------------------------------------------
-function trianguloConsolaC() {
+function trianguloConsolaC(filas) {
   //Escribe tu codigo aqui
+
+  let inicioFila=0;
+
+  let linea="";
+  for (let i = 1; i <= filas; i++) {
+
+    for (let j = 1; j <= i; j++) {
+      linea+=inicioFila;
+      inicioFila++;
+      
+    }
+    linea+="\n";
+    
+  }
+  return linea;
+
 }
 
 module.exports = { trianguloConsola, trianguloConsolaB, trianguloConsolaC };

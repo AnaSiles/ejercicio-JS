@@ -12,8 +12,23 @@
  *  Deberas recordar la concatenacion y el uso de espacio en blanco (\n)
  */
 
-function crearTriangulo() {
+function crearTriangulo(numeroEntero) {
   //Escribe tu codigo aqui
+
+  let linea="";
+  for (let i = 0; i<numeroEntero; i++) {
+
+   for (let j = 0; j <i; j++) {
+    linea+=" ";
+    
+   } 
+   for (let k = 0; k < numeroEntero-i; k++) {
+    linea+="*";
+    
+   }
+   linea+="\n";
+  }
+  return linea;
 }
 
 module.exports = { crearTriangulo };

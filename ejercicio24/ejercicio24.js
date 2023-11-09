@@ -13,8 +13,27 @@
  *  Si todo es correcto el algorimo debera imprimir 'NombreAlumno tu nota final es de NotaFinal sobre 10'
  */
 
-function notaAlumno() {
+function notaAlumno(nombre, practica, problemas, teoria) {
+
   //Escribe tu codigo aqui
+
+   
+  
+  if(nombre === "") {
+    return "Error al recibir el nombre";
+  }
+  
+  else if(practica<0 || practica>10 || problemas<0 || problemas >10 || teoria<0 || teoria>10) {
+    return "Ha habido un error con tus notas. Deben estar entre 1 y 10";
+  }
+  
+
+else {
+    let notaFinal= (practica*0.1)+(problemas*0.5)+(teoria*0.4);
+    return `${nombre} tu nota final es de ${notaFinal} sobre 10`;
+
+}
+
 }
 
 module.exports = { notaAlumno };

@@ -8,23 +8,32 @@
  */
 
 function sumaNPrimerosNumerosPares(N) {
-let sumaPares=0;
+// let sumaPares=0;
 
 
 
-for (let i = N; i<N + N; i++) {
-  if(i % 2 === 0) {
+// for (let i = N; i<N*3; i++) {
+//   if(i % 2 === 0) {
 
-     sumaPares+=i;
+//      sumaPares+=i;
     
      
+// }
+
+// }
+// return sumaPares;
+
+// }
+
+// otra forma:
+
+let sumaPares=0;
+
+for (let i=0; i<N;i++) {
+  sumaPares+=N + (N % 2) + (i*2);
 }
 
-}
 return sumaPares;
-
 }
-
-
 
 module.exports = { sumaNPrimerosNumerosPares };

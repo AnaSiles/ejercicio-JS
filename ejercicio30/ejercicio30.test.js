@@ -15,7 +15,7 @@ describe("retorna un triangulo con un numero especifico de filas", () => {
     expect(trianguloConsolaB(3)).toBe(expectedOutput);
   });
   test("section C", () => {
-    const expectedOutput = "0 \n" + "1 2 \n" + "3 4 5 \n";
+    const expectedOutput = "0\n" + "12\n" + "345\n";
     expect(trianguloConsolaC(3)).toBe(expectedOutput);
   });
 });

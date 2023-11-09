@@ -7,12 +7,36 @@
  *  al cuarto intento.
  */
 
-function generateRandomNumber() {
+function generateRandomNumber(randomNumber) {
   //Escribe tu codigo aqui
+
+  randomNumber = parseInt(Math.random() * 10) + 1;
+  return randomNumber;
 }
 
 function playGame(randomNumber, arrayNum) {
   //Escribe tu codigo aqui
+
+  /*Creo una variable let que llamo intentos para ir llevando registro de los intentos que ha realizado
+el usuario para encontrar el número aleatorio dentro del array*/
+  let intentos = 0;
+
+  while (intentos < arrayNum.length) {
+    if (arrayNum[intentos] == randomNumber) {
+      console.log(
+        `Exacto, has acertado en el ${
+          intentos + 1
+        } intento! el numero era el ${randomNumber}`
+      );
+      break;
+    }
+    intentos++;
+  }
+  if (intentos == arrayNum.length) {
+    console.log(
+      "Ninguno de los numeros introducido coincide con el creado aleatoriamente"
+    );
+  }
 }
 module.exports = {
   generateRandomNumber,

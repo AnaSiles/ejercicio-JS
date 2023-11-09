@@ -7,11 +7,31 @@
 
 function mediaArrayHastaMenosUno(array) {
 
-  let array=[];
-  
-  
+   
+  let suma=0;
+  let i=0;
 
-  //Escribe tu codigo aqui
+while (array[i]!=-1) {
+  suma+=array[i];
+  i++;
 }
+
+if (i>0) {
+
+   
+  let mediaAritmética=suma/i;
+    
+    return mediaAritmética;
+
+} else {
+
+  return 0;
+
+}
+
+
+//Escribe tu codigo aqui
+}
+
 
 module.exports = { mediaArrayHastaMenosUno };

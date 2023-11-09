@@ -5,8 +5,14 @@
  *  13,26....130;
  */
 
-function tablaNumero() {
+function tablaNumero(numero) {
   //Escribe tu codigo aqui
+
+  for (let i = 0; i < numero; i++) {
+    
+    
+    return numero*(i+1);
+  }
 }
 
 module.exports = { tablaNumero };
