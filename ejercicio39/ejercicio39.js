@@ -3,7 +3,7 @@
  * Desarollar un algoritmo que compruebe si los dos arrays introducidos son iguales
  */
 
-function sonIguales() {
+function sonIguales(arrayUno, arrayDos) {
   //Escribe tu codigo aqui
 }
 
